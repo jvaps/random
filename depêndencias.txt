@@ -1,0 +1,14 @@
+Como rodar?
+
+Após dar git clone, rodar npm install
+
+Caso não instale as depêndencias com o comando, seguir a seguinte sequência:
+    @emotion/react
+    @emotion/styled
+    @material-ui/core
+    @mui/icons-material
+    @mui/material
+    @mui/material
+    @axios
+    @history
+    @react-router-dom

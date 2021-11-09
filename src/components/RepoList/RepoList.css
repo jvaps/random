@@ -1,0 +1,53 @@
+.List {
+    justify-content: flex-end;
+    max-height: 1000px;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width:1024px) {
+    .List {
+        justify-content: flex-end;
+        float: right;
+        max-height: 1000px;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+  }
+  
+.cardList {
+    margin: 5px;
+    padding: 5px;
+    text-align: left;
+}
+
+.nameList {
+    color: #3B4252;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: italic;
+    line-height: 34px;
+    max-width: 250px;
+    text-align: left;
+}
+
+.descriptionList {
+    color: #3B4252;
+    font-family: Lato;
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 450px;
+    text-align: left;
+}
+
+.starsList {
+    display: flex;
+    color: #8190A5;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 26px;
+    width: 100px;
+    text-align: left;
+    align-items: center;
+}

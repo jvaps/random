@@ -1,0 +1,5 @@
+@TODO {
+    Alinhar a barra de pesquisa ao centro da tela
+    Melhorar responsividade, adaptando para cada tipo de tela
+    Melhorar os componentes para melhor reaproveitamento
+}

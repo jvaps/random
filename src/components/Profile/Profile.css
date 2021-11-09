@@ -1,0 +1,83 @@
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
+
+.Profile {
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    height: 1000px
+}
+
+.cardProfile {
+    display: grid;
+    place-content: center;
+    position: relative;
+    max-width: 800px;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    background-color: #3B4252;
+}
+
+@media screen and (max-width:1024px) {
+    .Profile {
+        display: flex;
+        justify-content: flex-start;
+        height: 1000px
+    }
+    .cardProfile {
+        max-width: 800px;
+        justify-content: center;
+        align-items: center;
+        background-color: #3B4252;
+    }
+}
+
+.nameProfile {
+        color: #ECEFF4;
+        font-family: Lato;
+        font-size: 40px;
+        font-style: italic;
+        line-height: 50px;
+        width: 400px;
+        text-align: left;
+}
+
+.loginProfile {
+        color: #ECEFF4;
+        font-family: Lato;
+        font-size: 28px;
+        font-style: italic;
+        line-height: 34px;
+        width: 400px;
+        text-align: left;
+}
+
+.bioProfile{
+        color: #8190A5;
+        font-family: Lato;
+        font-size: 18px;
+        line-height: 28px;
+        width: 400px;
+        text-align: left;
+}
+
+.contentProfile {
+    color: #ECEFF4;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 34px;
+    width: 300px;
+    text-align: left;
+}
+
+.backHome {
+    display: flex;
+    justify-content: center;
+}
+
+.backHome Button {
+    background-color: #ECEFF4;
+}
