@@ -1,7 +1,6 @@
 import React from "react";
 import "./Profile.css";
 import Button from '@material-ui/core/Button';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { Link } from "react-router-dom";
 
 const Profile = ({ profile }) => {
@@ -24,7 +23,7 @@ const Profile = ({ profile }) => {
         } = data;
         return (
           <div className="cardProfile" key={id}>
-            <img className="imgProfile" src={avatar_url} />
+            <img className="imgProfile" src={avatar_url} alt="dev_avatar" />
 
             <div className="nameProfile">
               {/* Nome do dev */}
@@ -75,7 +74,7 @@ const Profile = ({ profile }) => {
               {blog ? (
                 <div>
                   <span className="material-icons">groups</span>
-                  <a href={blog} target="_blank">
+                  <a href={blog} target="_blank" rel="noreferrer">
                     {blog}
                   </a>
                 </div>
@@ -88,6 +87,7 @@ const Profile = ({ profile }) => {
                   <a
                     href={`https://twitter.com/${twitter_username}`}
                     target="_blank"
+                    rel="noreferrer"
                   >
                     {twitter_username}
                   </a>

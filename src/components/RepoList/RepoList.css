@@ -1,20 +1,9 @@
 .List {
-    justify-content: flex-end;
-    max-height: 1000px;
-    flex-direction: column;
+    grid-area: list;
     overflow-y: scroll;
+    height: 1024px;
 }
 
-@media screen and (max-width:1024px) {
-    .List {
-        justify-content: flex-end;
-        float: right;
-        max-height: 1000px;
-        flex-direction: column;
-        overflow-y: scroll;
-    }
-  }
-  
 .cardList {
     margin: 5px;
     padding: 5px;

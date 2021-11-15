@@ -5,7 +5,7 @@ import { AuthContext } from "../providers/auth";
 import RepoList from "../components/RepoList/RepoList";
 import Profile from "../components/Profile/Profile"
 import { useNavigate } from "react-router";
-
+import "./List.css"
 const List = () => {
   const [repoArray, setRepoArray] = useState([])
   const [profileArray, setProfileArray] = useState([])
@@ -31,7 +31,6 @@ const List = () => {
       const result = await axios.get(url)
       userData.push(result.data)
       setProfileArray(userData)
-      console.log('ProfileArray',profileArray)
 
     } catch (error) {
       console.log(error)
@@ -42,10 +41,10 @@ const List = () => {
   useEffect(() => {
     getProfile()
     getRepoList()
-  }, [])
+  }, [username])
 
   return (
-    <div>
+    <div className="container">
         <Profile profile={profileArray} />
         <RepoList repoList={repoArray} username={username}/>
     </div>

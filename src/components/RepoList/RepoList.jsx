@@ -14,7 +14,7 @@ const RepoList = ({repoList, username}) => {
             return (
               <Card className="cardList" key={id}>
                 {/* Nome do projeto */}
-                <div className="nameList"><a href={`https://github.com/${username}/${name}`} target="_blank">{name}</a></div>
+                <div className="nameList"><a href={`https://github.com/${username}/${name}`} target="_blank" rel="noreferrer">{name}</a></div>
                 {/* Descrição */}
                 {description ?
                 <div className="descriptionList">{description}</div>

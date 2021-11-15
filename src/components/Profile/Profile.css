@@ -3,35 +3,20 @@ a, a:visited, a:hover, a:active {
   }
 
 .Profile {
-    float: left;
-    display: flex;
-    justify-content: flex-start;
-    height: 1000px
+    grid-area: profile;
+    height: 100%;
 }
 
 .cardProfile {
     display: grid;
     place-content: center;
-    position: relative;
-    max-width: 800px;
-    justify-content: center;
     align-items: center;
-    width: 600px;
     background-color: #3B4252;
+    height: 100%;
 }
-
-@media screen and (max-width:1024px) {
-    .Profile {
-        display: flex;
-        justify-content: flex-start;
-        height: 1000px
-    }
-    .cardProfile {
-        max-width: 800px;
-        justify-content: center;
-        align-items: center;
-        background-color: #3B4252;
-    }
+.imgProfile {
+    padding-top: 30px;
+    width: 350px;
 }
 
 .nameProfile {
@@ -40,7 +25,6 @@ a, a:visited, a:hover, a:active {
         font-size: 40px;
         font-style: italic;
         line-height: 50px;
-        width: 400px;
         text-align: left;
 }
 
@@ -50,7 +34,6 @@ a, a:visited, a:hover, a:active {
         font-size: 28px;
         font-style: italic;
         line-height: 34px;
-        width: 400px;
         text-align: left;
 }
 
@@ -59,7 +42,6 @@ a, a:visited, a:hover, a:active {
         font-family: Lato;
         font-size: 18px;
         line-height: 28px;
-        width: 400px;
         text-align: left;
 }
 
@@ -69,15 +51,22 @@ a, a:visited, a:hover, a:active {
     font-size: 14px;
     font-style: italic;
     line-height: 34px;
-    width: 300px;
     text-align: left;
 }
 
 .backHome {
     display: flex;
     justify-content: center;
+    padding: 30px;
 }
 
 .backHome Button {
     background-color: #ECEFF4;
 }
+
+
+@media screen and (max-width:1024px) {
+    .Profile {
+        height: auto;
+    }
+  }

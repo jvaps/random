@@ -19,16 +19,11 @@ const Home = () => {
         disabled === true ? alert('Digite um usuário do github'): navigate('/list')
     }
     return (
-        <div className="Home">
-            <div>
-                
-            </div>
             <Searchbar
                 onClick={openDev}
                 onChange={handleChange}
             >
             </Searchbar>
-        </div>
     );
 
 }

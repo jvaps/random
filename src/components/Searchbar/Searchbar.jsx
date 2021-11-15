@@ -3,7 +3,7 @@ import './Searchbar.css'
 
 const Searchbar = (props) => {
     return (
-        <div>
+        <div className="searchBar">
             <h3>Procurar por devs</h3>
             <form 
             className="form"
